@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="126px" viewBox="0 0 68 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.2621173%" id="linearGradient-1">
+            <stop stop-color="#168FFA" offset="0%"></stop>
+            <stop stop-color="#036DD5" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 87.5565891 68 87.5565891 68 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing--11" transform="translate(-1781.000000, -381.000000)">
+            <g id="Group-9">
+                <g transform="translate(-264.000000, -2.000000)" id="Group-5">
+                    <g>
+                        <g id="Group-7">
+                            <g id="Group-3-Copy-2" transform="translate(2045.000000, 383.000000)">
+                                <g id="Page-1">
+                                    <path d="M67.2608696,33.1096346 C67.1055007,14.7975889 52.1922505,0 33.8151192,0 C15.4381843,0 0.524934081,14.7975889 0.369565217,33.1096346 L67.2608696,33.1096346 Z" id="Fill-1" fill="url(#linearGradient-1)"></path>
+                                    <path d="M61.9482237,33.1096346 L67.6304348,33.1096346 C67.4742607,14.7975889 52.502652,0 34.0538045,0 C33.1650717,0 32.2846208,0.0353014632 31.4130435,0.102570362 C46.5668553,1.39813406 58.9513385,15.1307955 61.9482237,33.1096346" id="Fill-5" fill="#FEFEFE"></path>
+                                    <path d="M61.9482237,33.1096346 L67.6304348,33.1096346 C67.4742607,14.7975889 52.502652,0 34.0538045,0 C33.1650717,0 32.2846208,0.0353014632 31.4130435,0.102570362 C46.5668553,1.39813406 58.9513385,15.1307955 61.9482237,33.1096346 Z" id="Stroke-7" fill="#8CE6FF"></path>
+                                    <path d="M67.2608696,32.9256921 C67.2608696,34.0432377 52.2867634,34.9490587 33.8153157,34.9490587 C15.3436714,34.9490587 0.369565217,34.0432377 0.369565217,32.9256921 C0.369565217,31.8081466 15.3436714,30.9023256 33.8153157,30.9023256 C52.2867634,30.9023256 67.2608696,31.8081466 67.2608696,32.9256921" id="Fill-9" fill="#062051"></path>
+                                    <polygon id="Fill-13" fill="#042057" points="34.0289424 86.0850498 0 33.8282149 0.992112944 33.1917133 34.0273673 83.9224689 67.0070995 33.1096346 68 33.7445727"></polygon>
+                                    <polygon id="Fill-15" fill="#042057" points="34.2055611 86.4529347 9.97826087 35.1638639 11.0416871 34.6611663 34.2036008 83.6955484 57.32729 34.5811739 58.3913043 35.0823029"></polygon>
+                                    <polygon id="Fill-17" fill="#042057" points="34.1958885 87.5565891 21.4347826 36.0432644 22.5799622 35.763657 34.1939228 82.6461912 45.7890134 35.6848283 46.9347826 35.9634602"></polygon>
+                                    <mask id="mask-3" fill="white">
+                                        <use xlink:href="#path-2"></use>
+                                    </mask>
+                                    <g id="Clip-20"></g>
+                                    <polygon id="Fill-19" fill="#042057" mask="url(#mask-3)" points="33.2608696 84.9813953 34.3695652 84.9813953 34.3695652 35.6848283 33.2608696 35.6848283"></polygon>
+                                </g>
+                                <g id="Group-2" transform="translate(22.000000, 86.000000)">
+                                    <rect id="Rectangle-3" fill="#8CE6FF" x="0" y="0" width="24.4459459" height="24.5271617"></rect>
+                                    <rect id="Rectangle-3" fill="#0F234E" x="0" y="0" width="17.1486486" height="24.5271617"></rect>
+                                    <text id="P6" opacity="0.797341418" font-family=".AppleSystemUIFont" font-size="12.96" font-weight="normal" fill="#FFFFFF">
+                                        <tspan x="2.18918919" y="22.5758372">P</tspan>
+                                        <tspan x="2.18918919" y="38.5758372">6</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

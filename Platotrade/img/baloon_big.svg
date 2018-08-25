@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="164px" viewBox="0 0 100 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.2621173%" id="linearGradient-1">
+            <stop stop-color="#168FFA" offset="0%"></stop>
+            <stop stop-color="#036DD5" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 128.946977 99.36 128.946977 99.36 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing--11" transform="translate(-1715.000000, -240.000000)">
+            <g id="Group-9">
+                <g transform="translate(-264.000000, -2.000000)" id="Group-5">
+                    <g>
+                        <g id="Group-7">
+                            <g id="Group-3-Copy" transform="translate(1979.000000, 242.000000)">
+                                <g id="Page-1">
+                                    <path d="M98.28,48.7614618 C98.0529787,21.7928127 76.2620883,0 49.4098565,0 C22.5579117,0 0.767021327,21.7928127 0.54,48.7614618 L98.28,48.7614618 Z" id="Fill-1" fill="url(#linearGradient-1)"></path>
+                                    <path d="M90.5172868,48.7614618 L98.82,48.7614618 C98.5918022,21.7928127 76.7156397,0 49.7586179,0 C48.4600224,0 47.1735283,0.0519894276 45.9,0.15105817 C68.0423932,2.05907016 86.1383087,22.2835352 90.5172868,48.7614618" id="Fill-5" fill="#FEFEFE"></path>
+                                    <path d="M90.5172868,48.7614618 L98.82,48.7614618 C98.5918022,21.7928127 76.7156397,0 49.7586179,0 C48.4600224,0 47.1735283,0.0519894276 45.9,0.15105817 C68.0423932,2.05907016 86.1383087,22.2835352 90.5172868,48.7614618 Z" id="Stroke-7" fill="#8CE6FF"></path>
+                                    <path d="M98.28,48.4905648 C98.28,50.1364046 76.4001884,51.4704319 49.4101437,51.4704319 C22.4198116,51.4704319 0.54,50.1364046 0.54,48.4905648 C0.54,46.8447249 22.4198116,45.5106977 49.4101437,45.5106977 C76.4001884,45.5106977 98.28,46.8447249 98.28,48.4905648" id="Fill-9" fill="#062051"></path>
+                                    <polygon id="Fill-13" fill="#042057" points="49.7222899 126.779801 0 49.8197347 1.44965209 48.8823415 49.7199884 123.594909 97.9091972 48.7614618 99.36 49.6965525"></polygon>
+                                    <polygon id="Fill-15" fill="#042057" points="49.980361 127.321595 14.58 51.7867813 16.1338534 51.0464449 49.9774968 123.260717 83.7652873 50.9286379 85.32 51.6666643"></polygon>
+                                    <polygon id="Fill-17" fill="#042057" points="49.9662276 128.946977 31.32 53.0818984 32.9933094 52.670113 49.9633555 121.7153 66.9058289 52.5540199 68.58 52.9643686"></polygon>
+                                    <mask id="mask-3" fill="white">
+                                        <use xlink:href="#path-2"></use>
+                                    </mask>
+                                    <g id="Clip-20"></g>
+                                    <polygon id="Fill-19" fill="#042057" mask="url(#mask-3)" points="48.6 125.154419 50.22 125.154419 50.22 52.5540199 48.6 52.5540199"></polygon>
+                                </g>
+                                <g id="Group-2" transform="translate(31.860000, 126.779801)">
+                                    <rect id="Rectangle-3" fill="#8CE6FF" x="0" y="0" width="36.18" height="36.3001993"></rect>
+                                    <rect id="Rectangle-3" fill="#0F234E" x="0" y="0" width="25.38" height="36.3001993"></rect>
+                                    <text id="P2" opacity="0.797341418" font-family=".AppleSystemUIFont" font-size="14.04" font-weight="normal" fill="#FFFFFF">
+                                        <tspan x="3.24" y="30.826113">P2</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
