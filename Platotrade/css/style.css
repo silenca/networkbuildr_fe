@@ -87,6 +87,12 @@ body, html {
   width: 50%;
   float: left; }
 
+.hide-animate-left {
+  animation: hideleft 1s; }
+@keyframes hideleft {
+  to {
+    left: 300px;
+    opacity: 0; } }
 #menu {
   display: flex;
   align-items: center;
@@ -431,9 +437,15 @@ body, html {
   background: white;
   top: 0;
   right: 0;
-  z-index: 101;
+  z-index: 10001;
   font-family: Gotham Pro, Arial, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  animation: show 1s; }
+@keyframes show {
+  from {
+    right: -300px; }
+  to {
+    right: 0; } }
   .auth__in .auth__logo {
     margin: 0 0 25px;
     text-align: center;
