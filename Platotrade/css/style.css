@@ -26,6 +26,12 @@
   font-weight: 700;
   font-style: normal; }
 @font-face {
+  font-family: Gotham Pro;
+  src: url(../fonts/GothamPro-Light.eot);
+  src: url(../fonts/GothamPro-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/GothamPro-Light.woff) format("woff"), url(../fonts/GothamPro-Light.ttf) format("truetype"), url(../fonts/GothamPro-Light.svg#GothamPro-Light) format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
   font-family: "SFLight";
   src: url("../fonts/SF.ttf") format("truetype"); }
 @font-face {
@@ -63,6 +69,10 @@ body, html {
   left: 0;
   right: 0;
   text-align: center; }
+  .try-for-free .btn-account {
+    display: inline-block; }
+    .try-for-free .btn-account:hover {
+      text-decoration: none; }
 
 .two-column-section {
   position: relative;
@@ -75,7 +85,7 @@ body, html {
   align-items: center;
   justify-content: space-between;
   padding: 30px;
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 1001; }
   #menu .site-branding {
@@ -97,7 +107,8 @@ body, html {
     text-align: center;
     margin-right: 5px;
     margin-left: 50px;
-    opacity: 0.8; }
+    opacity: 0.8;
+    cursor: pointer; }
     #menu .btn-login:hover {
       opacity: 1;
       background: #3796F8;
@@ -158,12 +169,13 @@ body, html {
     align-items: center;
     height: 100vh; }
     #top-section .col-md-6 h1 {
-      font-family: Helvetica-Bold;
+      font-family: Helvetica;
       font-size: 72px;
       text-shadow: 0 6px 34px #0E3265;
       text-transform: uppercase;
       margin-bottom: 20px;
-      margin-top: 60px; }
+      margin-top: 60px;
+      font-weight: 700; }
     #top-section .col-md-6 p {
       font-family: Gotham Pro;
       font-size: 20px;
@@ -233,7 +245,7 @@ body, html {
     color: #8C8C8C;
     letter-spacing: 0;
     line-height: 38px; }
-  #trend-section object {
+  #trend-section object, #trend-section video {
     width: 100%; }
 
 #setup-steps-section h3 {
@@ -246,6 +258,21 @@ body, html {
     display: block; }
 #setup-steps-section .col-md-6:first-child {
   padding-left: 0; }
+#setup-steps-section .col-md-6 video {
+  width: 100%; }
+#setup-steps-section .carousel-indicators {
+  bottom: -25px;
+  pointer-events: none; }
+  #setup-steps-section .carousel-indicators li {
+    opacity: 0.31;
+    background: #D8D8D8;
+    border: none;
+    width: 15px;
+    height: 15px; }
+    #setup-steps-section .carousel-indicators li.active {
+      opacity: 1; }
+    #setup-steps-section .carousel-indicators li:nth-child(2) {
+      margin: 0 30px; }
 #setup-steps-section ul {
   list-style: none;
   padding: 0;
@@ -390,7 +417,7 @@ body, html {
     color: #0b80e0; }
 
 .footer-links {
-  font-family: "Ubuntu", Gotham Pro, Arial, sans-serif;
+  font-family: Gotham Pro, "Ubuntu", Arial, sans-serif;
   font-weight: 400; }
   .footer-links h4 {
     margin: 0 0 30px;
@@ -473,7 +500,8 @@ body, html {
     box-sizing: border-box; }
   .auth__in .auth__logo {
     margin: 0 0 25px;
-    text-align: center; }
+    text-align: center;
+    height: 28px; }
     .auth__in .auth__logo object {
       width: 276px;
       height: 28px; }
@@ -505,7 +533,7 @@ body, html {
             background-color: #f6f6f8; }
     .auth__in .auth__social .icon {
       fill: #3796f8;
-      height: 20px;
+      height: 22px;
       pointer-events: none; }
   .auth__in .auth__form-or {
     margin: 0 0 30px;
@@ -558,7 +586,7 @@ body, html {
         transition: all 0.25s; }
         .auth__in .auth__form .inp-group .inp-style:focus {
           border-color: #c7d6e3; }
-        .auth__in .auth__form .inp-group .inp-style::-webkit-input-placeholder {
+        .auth__in .auth__form .inp-group .inp-style::placeholder, .auth__in .auth__form .inp-group .inp-style::-webkit-input-placeholder, .auth__in .auth__form .inp-group .inp-style:-ms-input-placeholder {
           color: #c8d2d7;
           font-family: Gotham Pro;
           font-weight: 300;
@@ -570,7 +598,8 @@ body, html {
         color: #9ba6ab;
         letter-spacing: 0.5px;
         text-transform: uppercase;
-        font-weight: 400; }
+        font-weight: 300;
+        line-height: 13px; }
     .auth__in .auth__form .inp-signed label {
       float: left;
       letter-spacing: 0;

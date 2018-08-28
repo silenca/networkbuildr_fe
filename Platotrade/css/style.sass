@@ -1,4 +1,6 @@
 //Fonts
+
+//Gotham Pro
 @font-face
   font-family: Gotham Pro
   src: url(../fonts/GothamPro.eot)
@@ -23,6 +25,13 @@
   src: url(../fonts/GothamPro-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/GothamPro-Bold.woff) format("woff"), url(../fonts/GothamPro-Bold.ttf) format("truetype"), url(../fonts/GothamPro-Bold.svg#GothamPro-Bold) format("svg")
   font-weight: 700
   font-style: normal
+@font-face
+  font-family: Gotham Pro
+  src: url(../fonts/GothamPro-Light.eot)
+  src: url(../fonts/GothamPro-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/GothamPro-Light.woff) format("woff"), url(../fonts/GothamPro-Light.ttf) format("truetype"), url(../fonts/GothamPro-Light.svg#GothamPro-Light) format("svg")
+  font-weight: 300
+  font-style: normal
+
 @font-face
   font-family: 'SFLight'
   src: url('../fonts/SF.ttf') format('truetype')
@@ -63,6 +72,10 @@ body, html
   left: 0
   right: 0
   text-align: center
+  .btn-account
+    display: inline-block
+    &:hover
+      text-decoration: none
 .two-column-section
   position: relative
   padding: 0 30px
@@ -75,7 +88,7 @@ body, html
   align-items: center
   justify-content: space-between
   padding: 30px
-  position: fixed
+  position: absolute
   width: 100%
   z-index: 1001
   .site-branding
@@ -98,6 +111,7 @@ body, html
     margin-right: 5px
     margin-left: 50px
     opacity: 0.8
+    cursor: pointer
     &:hover
       opacity: 1
       background: #3796F8
@@ -160,12 +174,13 @@ body, html
     align-items: center
     height: 100vh
     h1
-      font-family: Helvetica-Bold
+      font-family: Helvetica
       font-size: 72px
       text-shadow: 0 6px 34px #0E3265
       text-transform: uppercase
       margin-bottom: 20px
       margin-top: 60px
+      font-weight: 700
     p
       font-family: Gotham Pro
       font-size: 20px
@@ -236,7 +251,7 @@ body, html
     color: #8C8C8C
     letter-spacing: 0
     line-height: 38px
-  object
+  object, video
     width: 100%
 
 //Setup Steps Section
@@ -251,6 +266,21 @@ body, html
       display: block
   .col-md-6:first-child
     padding-left: 0
+  .col-md-6 video
+    width: 100%
+  .carousel-indicators
+    bottom: -25px
+    pointer-events: none
+    li
+      opacity: 0.31
+      background: #D8D8D8
+      border: none
+      width: 15px
+      height: 15px
+      &.active
+        opacity: 1
+      &:nth-child(2)
+        margin: 0 30px
   ul
     list-style: none
     padding: 0
@@ -398,7 +428,7 @@ body, html
     color: #0b80e0
 
 .footer-links
-  font-family: 'Ubuntu', Gotham Pro, Arial, sans-serif
+  font-family: Gotham Pro, 'Ubuntu', Arial, sans-serif
   font-weight: 400
   h4
     margin: 0 0 30px
@@ -486,6 +516,7 @@ body, html
   .auth__logo
     margin: 0 0 25px
     text-align: center
+    height: 28px
     object
       width: 276px
       height: 28px
@@ -517,7 +548,7 @@ body, html
             background-color: #f6f6f8
     .icon
       fill: #3796f8
-      height: 20px
+      height: 22px
       pointer-events: none
   .auth__form-or
     margin: 0 0 30px
@@ -570,7 +601,7 @@ body, html
         transition: all .25s
         &:focus
           border-color: #c7d6e3
-        &::-webkit-input-placeholder
+        &::placeholder, &::-webkit-input-placeholder, &:-ms-input-placeholder
           color: #c8d2d7
           font-family: Gotham Pro
           font-weight: 300
@@ -582,7 +613,8 @@ body, html
         color: #9ba6ab
         letter-spacing: .5px
         text-transform: uppercase
-        font-weight: 400
+        font-weight: 300
+        line-height: 13px
     .inp-signed
       label
         float: left

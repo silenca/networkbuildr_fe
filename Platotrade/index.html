@@ -7,7 +7,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/auth.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/scripts.js"></script>
 </head>
@@ -19,11 +18,11 @@
         <object id="light-logo" data="img/logo-light.svg" type="image/svg+xml"></object>
     </a>
     <div id="menu-links">
-        <a href="#">About</a>
-        <a href="#">FAQ</a>
-        <a href="#">Contact Us</a>
-        <a id="btn-login" class="btn-login" href="#">Login</a>
-        <a class="btn-account" href="#">Open an account</a>
+        <a href="/api-client/about">About</a>
+        <a href="/api-client/support#faq">FAQ</a>
+        <a href="/api-client/support">Support</a>
+        <a class="btn-login" onclick="openLogin()">Login</a>
+        <a class="btn-account" href="/api-client/register">Open an account</a>
         <a class="icon" onclick="openMenu()">
             <i class="fa fa-bars"></i>
         </a>
@@ -45,7 +44,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-md-6 demo-image">
+    <div id="demo-image" class="col-md-6 demo-image">
         <div>
             <object id="top-section-big-baloon" data="img/baloon_big.svg" type="image/svg+xml"></object>
             <object id="top-section-small-baloon" data="img/baloon_small.svg" type="image/svg+xml"></object>
@@ -64,10 +63,13 @@
             turns.</p>
     </div>
     <div class="col-md-7">
-        <object data="img/trends.svg" type="image/svg+xml"></object>
+        <video autoplay loop muted>
+            <source src="video/graph.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
     <div class="try-for-free">
-        <button class="btn-account">Try for free</button>
+        <a class="btn-account" href="/api-client/register">Try for free</a>
     </div>
 </div>
 <!--Trend-->
@@ -83,10 +85,41 @@
         </ul>
     </div>
     <div class="col-md-6">
-        <img src="img/setup-demo.png" class="img-responsive">
+        <!--<img src="img/setup-demo.png" class="img-responsive">-->
+        <div id="setup-steps-carousel" class="carousel slide" data-ride="carousel" data-pause="false" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#setup-steps-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#setup-steps-carousel" data-slide-to="1"></li>
+                <li data-target="#setup-steps-carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <video class="step-video" autoplay loop muted>
+                        <source src="video/01_1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="item">
+                    <video class="step-video" autoplay loop muted>
+                        <source src="video/01_2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="item">
+                    <video class="step-video" autoplay loop muted>
+                        <source src="video/01_3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="try-for-free">
-        <button class="btn-account">Try for free</button>
+        <a class="btn-account" href="/api-client/register">Try for free</a>
     </div>
 </div>
 <!--Setup-->
@@ -212,7 +245,7 @@
 <!--Footer-->
 
 <!--Login-->
-<div class="auth__in">
+<div id="auth__in" class="auth__in">
 
     <div class="auth__in-scroll">
 
