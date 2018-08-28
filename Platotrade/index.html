@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Platotrade</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/scripts.js"></script>
 </head>
 <body>
@@ -32,7 +30,7 @@
 
 <!--Top-->
 <div id="top-section" class="section">
-    <div class="col-md-6">
+    <div class="half-column">
         <div>
             <h1 class="heading main-heading">Buy Lows <br>Sell Highs</h1>
             <p>Dynamic signals and algorithmic crypto <br>trading for bitcoin</p>
@@ -44,7 +42,7 @@
             </ul>
         </div>
     </div>
-    <div id="demo-image" class="col-md-6 demo-image">
+    <div id="demo-image" class="half-column demo-image">
         <div>
             <object id="top-section-big-baloon" data="img/baloon_big.svg" type="image/svg+xml"></object>
             <object id="top-section-small-baloon" data="img/baloon_small.svg" type="image/svg+xml"></object>
@@ -56,13 +54,13 @@
 
 <!--Trend-->
 <div id="trend-section" class="section two-column-section">
-    <div class="col-md-5">
+    <div class="сolumn-5">
         <h2>THE TREND  <br>IS YOUR FRIEND</h2>
         <p>Moving average convergence <br>divergence (MACD) is one of the most <br>popular indicators for technical
             analysis. <br>MACD is a trend-following momentum <br>indicator with a signal line to identify <br>price
             turns.</p>
     </div>
-    <div class="col-md-7">
+    <div class="сolumn-7">
         <video autoplay loop muted>
             <source src="video/graph.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -76,7 +74,7 @@
 
 <!--Setup-->
 <div id="setup-steps-section" class="section two-column-section">
-    <div class="col-md-6">
+    <div class="half-column">
         <h3><span>3 simple steps</span> how you can start earning with <br>Platotrade.com</h3>
         <ul>
             <li><span>1</span>Add preferred AUTOTRADER</li>
@@ -84,39 +82,58 @@
             <li><span>3</span>Activate</li>
         </ul>
     </div>
-    <div class="col-md-6">
+    <div class="half-column">
         <!--<img src="img/setup-demo.png" class="img-responsive">-->
-        <div id="setup-steps-carousel" class="carousel slide" data-ride="carousel" data-pause="false" data-interval="5000">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#setup-steps-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#setup-steps-carousel" data-slide-to="1"></li>
-                <li data-target="#setup-steps-carousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <video class="step-video" autoplay loop muted>
-                        <source src="video/01_1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+        <!--<div id="setup-steps-carousel" class="carousel slide" data-ride="carousel" data-pause="false"-->
+             <!--data-interval="5000">-->
+            <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+            <!--<ol class="carousel-indicators">-->
+                <!--<li data-target="#setup-steps-carousel" data-slide-to="0" class="active"></li>-->
+                <!--<li data-target="#setup-steps-carousel" data-slide-to="1"></li>-->
+                <!--<li data-target="#setup-steps-carousel" data-slide-to="2"></li>-->
+            <!--</ol>-->
+            <!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+            <!--<div class="carousel-inner">-->
+                <!--<div class="item active">-->
+                    <!--<video class="step-video" autoplay loop muted>-->
+                        <!--<source src="video/01_1.mp4" type="video/mp4">-->
+                        <!--Your browser does not support the video tag.-->
+                    <!--</video>-->
+                <!--</div>-->
 
-                <div class="item">
-                    <video class="step-video" autoplay loop muted>
-                        <source src="video/01_2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                <!--<div class="item">-->
+                    <!--<video class="step-video" autoplay loop muted>-->
+                        <!--<source src="video/01_2.mp4" type="video/mp4">-->
+                        <!--Your browser does not support the video tag.-->
+                    <!--</video>-->
+                <!--</div>-->
 
-                <div class="item">
-                    <video class="step-video" autoplay loop muted>
-                        <source src="video/01_3.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
+                <!--<div class="item">-->
+                    <!--<video class="step-video" autoplay loop muted>-->
+                        <!--<source src="video/01_3.mp4" type="video/mp4">-->
+                        <!--Your browser does not support the video tag.-->
+                    <!--</video>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <video class="step-video" autoplay loop muted>
+            <source src="video/01_1.mp4" type="video/mp4" oncanplay="carousel()">
+            Your browser does not support the video tag.
+        </video>
+        <video class="step-video" autoplay loop muted>
+            <source src="video/01_2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video class="step-video" autoplay loop muted>
+            <source src="video/01_3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <ol id="carousel-indicators" class="carousel-indicators">
+            <li></li>
+            <li class="active"></li>
+            <li></li>
+        </ol>
+
     </div>
     <div class="try-for-free">
         <a class="btn-account" href="/api-client/register">Try for free</a>
@@ -173,14 +190,14 @@
 <!--Footer-->
 <div class="footer">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-6">
             <div class="footer-logo"><a href="/">
                 Platotrade
             </a></div>
             <div class="footer-copy"><p>Copyright © 2018 Plato Trade,</p>
                 <p>All rights reserved</p></div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
             <nav class="footer-links"><h4>CONTACT US</h4>
                 <ul class="list-unstyled">
                     <li><a href="skype:Platotrade?chat">
@@ -198,7 +215,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
             <nav class="footer-links"><h4>COMPANY</h4>
                 <ul class="list-unstyled">
                     <li><a aria-current="false" href="/api-client/about">About</a></li>
@@ -221,7 +238,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
             <nav class="footer-links"><h4>SOCIAL</h4>
                 <ul class="list-unstyled">
                     <li><a href="//medium.com/platotrade" target="_blank" rel="noopener noreferrer">Blog</a></li>
@@ -288,7 +305,8 @@
 
             <div class="inp-group">
                 <label for="signin_pwd">Password</label>
-                <input type="password" name="#" placeholder="Enter your password" class="inp-style inp-fw" id="signin_pwd">
+                <input type="password" name="#" placeholder="Enter your password" class="inp-style inp-fw"
+                       id="signin_pwd">
                 <p class="inp-group-bt c-green tar">Your password has been updated</p>
             </div><!--.inp-group-->
 
@@ -319,5 +337,27 @@
     </div><!--.auth__in-scroll-->
 </div><!--.auth__in-->
 <!--Login-->
+<script type="text/javascript">
+    var myIndex = 0;
+    var videos = document.getElementsByTagName('video');
+    videos[1].addEventListener("canplay", carousel());
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("step-video");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        var indicators = document.getElementById('carousel-indicators').getElementsByTagName('li');
+        for (i = 0; i < indicators.length; i++) {
+            indicators[i].classList.remove('active')
+        }
+        indicators[myIndex-1].classList.add('active');
+        setTimeout(carousel, 5410);
+    }
+</script>
 </body>
 </html>
