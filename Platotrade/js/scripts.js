@@ -1,7 +1,7 @@
 function openLogin() {
     document.getElementById('auth__in').style.display = 'block';
     // document.getElementById('menu-links').style.display = 'none';
-    document.getElementById('top-section-demo').classList.add('hide-animate-left');
+    document.getElementById('demo-image').classList.add('hide-animate-left');
     setTimeout(function () {
         document.getElementById('top-section-demo').style.display = 'none';
     },1000);

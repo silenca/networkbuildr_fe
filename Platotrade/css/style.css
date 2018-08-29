@@ -90,6 +90,9 @@ body, html {
 .hide-animate-left {
   animation: hideleft 1s; }
 @keyframes hideleft {
+  from {
+    left: 0;
+    opacity: 1; }
   to {
     left: 300px;
     opacity: 0; } }
@@ -172,12 +175,36 @@ body, html {
   color: #8092AE; }
 
 #top-section {
-  background-image: url("../img/top-section-bg.svg"), linear-gradient(-180deg, #05223F 0%, #2B65E1 94%);
-  background-size: 100%;
+  background-image: url("../img/clouds.svg"), linear-gradient(-180deg, #05223F 0%, #2B65E1 94%);
+  background-size: 105%, 100%;
   background-position: bottom;
   background-repeat: no-repeat;
   padding: 0 30px;
-  color: #fff; }
+  color: #fff;
+  position: relative;
+  animation: slideright 0.5s; }
+@keyframes slideright {
+  from {
+    background-position: -50px bottom, bottom; }
+  to {
+    background-position: bottom; } }
+  #top-section:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img/bridge.svg") no-repeat;
+    background-size: 33%;
+    background-position: 45% bottom;
+    animation: slideup 0.5s; }
+@keyframes slideup {
+  from {
+    bottom: -100%; }
+  to {
+    bottom: 0; } }
   #top-section .half-column {
     padding: 0;
     display: flex;
@@ -190,14 +217,24 @@ body, html {
       text-transform: uppercase;
       margin-bottom: 20px;
       margin-top: 60px;
-      font-weight: 700; }
+      font-weight: 700;
+      position: relative;
+      animation: slidetop 1s; }
+@keyframes slidetop {
+  from {
+    top: 50px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
     #top-section .half-column p {
       font-family: Gotham Pro, Arial, sans-serif;
       font-size: 20px;
       color: #FFFFFF;
       letter-spacing: 0;
       line-height: 40px;
-      animation: showtop 0.5s; }
+      position: relative;
+      animation: slidetop 0.5s; }
     #top-section .half-column h4 {
       font-family: "SFLight";
       font-size: 20px;
@@ -228,24 +265,42 @@ body, html {
           top: 2px; }
   #top-section .demo-image {
     text-align: right;
-    align-items: flex-end; }
+    align-items: flex-end;
+    position: relative; }
     #top-section .demo-image div {
       width: 100%; }
     #top-section .demo-image #top-section-demo {
       width: 100%;
       position: relative;
-      left: 30px; }
+      left: 30px;
+      animation: showfromleft 1s; }
+@keyframes showfromleft {
+  from {
+    left: 100%; }
+  to {
+    left: 30px; } }
     #top-section .demo-image #top-section-big-baloon {
       width: 65px;
       position: relative;
       left: 28px;
-      z-index: 1; }
+      z-index: 1;
+      animation: slidebigbaloon 0.5s; }
+@keyframes slidebigbaloon {
+  from {
+    left: -22px; }
+  to {
+    left: 28px; } }
     #top-section .demo-image #top-section-small-baloon {
       width: 45px;
       position: relative;
       top: 70px;
-      z-index: 1; }
-
+      z-index: 1;
+      animation: slidesmallbaloon 0.5s; }
+@keyframes slidesmallbaloon {
+  from {
+    left: -50px; }
+  to {
+    left: 0; } }
 #trend-section {
   background: #030529; }
   #trend-section .сolumn-5 {
